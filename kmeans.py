@@ -8,11 +8,27 @@ url = "https://i.imgur.com/RArtpOd.png" #first image
 img = io.imread(url)
 
 
+
+img = cv2.imread("public_assets/IMG_0150.jpeg", cv2.IMREAD_COLOR)
+ 
+cv2.imshow("image", img)
+ 
+cv2.waitKey(100)
+ 
+# It is for removing/deleting created GUI window from screen
+# and memory
+cv2.destroyAllWindows()
+
+
+
+
+
 print(img.shape)
 img_init = img.copy()
 
 plt.figure(figsize=(6, 6)) # plot initial image
 plt.imshow(img_init)
+plt.show()
 
 img = img.reshape((img.shape[0] * img.shape[1],img.shape[2])) 
 print(img.shape)
