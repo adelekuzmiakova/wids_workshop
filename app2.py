@@ -12,7 +12,7 @@ from utils.streamlit import *
 
 st.image("logo.jpg")
 st.subheader("Which feature do you want to test?")
-tab_1, tab_2, tab_3 = st.tabs(["Dominant colors", "Image enhacement", "Object detection"])
+tab_1, tab_2, tab_3 = st.tabs(["Dominant colors    ", "Image enhancement    ", "Object detection    "])
 
 with tab_1:
     load_expander_crop_hints() 
@@ -21,6 +21,4 @@ with tab_1:
     if uploaded_file is not None:
         with st.sidebar:
             # sidebar where user can select aspect ratio
-            st.markdown('Please select the desired aspect ratio.')
-            aspect_ratio_options = ["16:9", "4:3", "1:1", "4:5", "None"]
-            aspect_ratio_input = st.radio("", aspect_ratio_options)
+            num_clusters = st.slider(label = "How many colors do you want to identify?", min_value = 1, max_value = 10, value = 5, step = 1)
