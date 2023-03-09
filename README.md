@@ -3,9 +3,8 @@
 
 This repository hosts the code for the Streamlit application to showcase several fundamental computer vision processing tasks.
 
+![Alt text](public_assets/image_3.png?raw=true "Title")
 
-
-<p>&nbsp;</p>
 
 ## 💡 Python compatibility:
 The code is compatible with *Python 3.10.x*. 
